@@ -1,0 +1,14 @@
+{
+  "name": "Books.api",
+  "version": "1.0.0",
+  "description": "Api for Books",
+  "main": "index.js",
+  "author": "Leivince John Marte",
+  "license": "NONE",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.7",
+    "multer": "^1.3.0"
+  }
+}
