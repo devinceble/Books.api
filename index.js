@@ -50,7 +50,10 @@ app.put('/Books/:ID', function(req, res){
 });
 
 app.delete('/Books/:ID', function(req, res){
-   res.json(req.params);
+  Book.remove({ ID: req.params.ID }, function (err) {
+    if (err) throw err;
+    res.send('Book Deleted');
+  });
 });
 
 app.listen(3000);
